@@ -1,38 +1,35 @@
-grunt-jasmine-runner-example
+marionette.augment.inlineregions
 ============================
 
-[![Build Status](https://secure.travis-ci.org/jsoverson/grunt-jasmine-runner-example.png)](http://travis-ci.org/jsoverson/grunt-jasmine-runner-example)
+Example plugin and plugin structure for Marionette
 
-Example setup for grunt-jasmine-runner.
+# THIS IS NOT USABLE
+This is example code on a branch of Marionette
 
-Browse the source for an example of how to set up your tests to be run via grunt-jasmine-runner.
+## Usage Example
+```
+var MyView = Marionette.ItemView.augment(
+  Marionette.augment.InlineRegions
+).extend({
+  // extend as normal
+})
+```
 
-The application here is the Jasmine example application. The only changes made were jshint comments to allow the linter to pass.
-
-Clone this repo and then run `npm install` to install grunt-jasmine-runner
-
-## Running tests headlessly
-
-`grunt jasmine`
-
-Or to run the default tasks (lint + jasmine) :
-
-`grunt`
-
-## Running tests in a browser
-
-`grunt jasmine-server`
-
-### PhantomJS
-
-This plugin requires phantomjs to run tests headlessly. Get it at [phantomjs.org](http://phantomjs.org/)
+## Leveraging RegionManager
+This example plays well with RegionManager in the example to properly close/reopen regions
+```
+var MyView = Marionette.ItemView.augment(
+  Marionette.augment.RegionManager,
+  Marionette.augment.InlineRegions
+).extend({
+  // extend as normal
+})
+```
 
 ### License
 
-The example application source is copyright Pivotal Labs and licensed under the MIT license.
-
-All other configuration code is public domain
+The example licensed under the MIT license.
 
 ### Author
 
-All code not coming from Pivotal Labs was written by Jarrod Overson
+Jarrod Overson
