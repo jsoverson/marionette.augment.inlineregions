@@ -1,11 +1,6 @@
 // Marionette.augment.InlineRegions
 // ------
 
-// Used for allow
-//
-// A specialized view type that renders an area of HTML and then
-// attaches `Region` instances to the specified `regions`.
-// Used for composite view management and sub-application areas.
 Marionette.augment.InlineRegions = {
   augment : function(View) {
     return View.extend({
