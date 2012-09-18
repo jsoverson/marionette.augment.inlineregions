@@ -1,0 +1,25 @@
+{
+  "name"            : "marionette.augment.inlineregions",
+  "description"     : "Example plugin for Marionette",
+  "version"         : "0.1.0",
+  "homepage"        : "https://github.com/jsoverson/marionette.augment.inlineregions",
+  "author"          : {
+    "name"  : "Jarrod Overson",
+    "email" : "jsoverson@gmail.com",
+    "url"   : "http://jarrodoverson.com/"
+  },
+  "repository"      : {
+    "type" : "git",
+    "url"  : "git://github.com/jsoverson/marionette.augment.inlineregions.git"
+  },
+  "scripts"         : {
+    "test" : "./node_modules/grunt/bin/grunt jasmine"
+  },        
+  "bugs"            : {
+    "url" : "https://github.com/jsoverson/marionette.augment.inlineregions/issues"
+  },
+  "devDependencies" : {
+    "grunt-jasmine-runner" : "latest",
+    "grunt"         : "~0.3.9"
+  }
+}
