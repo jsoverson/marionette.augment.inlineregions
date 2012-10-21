@@ -1,6 +1,8 @@
 // Marionette.augment.InlineRegions
 // ------
 
+Marionette.augment = Marionette.augment || {};
+
 Marionette.augment.InlineRegions = {
   augment : function(View) {
     return View.extend({
