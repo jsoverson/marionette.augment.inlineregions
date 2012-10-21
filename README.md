@@ -1,10 +1,8 @@
 marionette.augment.inlineregions
 ============================
 
-Example plugin and plugin structure for Marionette
-
-# THIS IS NOT USABLE
-This is example code on a branch of Marionette
+This is a simple augment for Marionette that allows you to specify regions inline inside your templates. This
+depends on your usage of [Backbone.Augment](https://github.com/jsoverson/Backbone.Augment).
 
 ## Usage Example
 ```
@@ -15,11 +13,10 @@ var MyView = Marionette.ItemView.augment(
 })
 ```
 
-## Leveraging RegionManager
-This example plays well with RegionManager in the example to properly close/reopen regions
+## Leveraging RegionManager inside Marionette.Layout
+
 ```
-var MyView = Marionette.ItemView.augment(
-  Marionette.augment.RegionManager,
+var MyView = Marionette.Layout.augment(
   Marionette.augment.InlineRegions
 ).extend({
   // extend as normal
